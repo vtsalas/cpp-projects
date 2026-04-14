@@ -7,6 +7,19 @@ Each project focuses on a specific concept — from recursion and OOP to templat
 
 ## 📂 Projects
 
+### ♟️ ChessBoardArray
+
+A sparse matrix implementation using a chessboard pattern, where only "white squares" store non-zero values.
+
+- Custom `Row` and `ConstRow` nested classes enabling `a[i][j]` double-bracket access
+- `loc(i, j)` private method mapping 2D coordinates to a compact 1D array
+- Full Rule of Three: copy constructor, assignment operator, destructor
+- `out_of_range` exception thrown on access to "black" (invalid) squares
+
+**Concepts:** Nested Classes · Operator Overloading · Dynamic Memory · Const Correctness · Rule of Three
+
+---
+
 ### 🎮 Specker's Game
 A multi-player coin game implementing a full OOP architecture.
 - Abstract base class `Player` with virtual `play()` method
