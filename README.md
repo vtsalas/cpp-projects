@@ -7,6 +7,19 @@ Each project focuses on a specific concept — from recursion and OOP to templat
 
 ## 📂 Projects
 
+### 🔢 Polynomial
+
+A polynomial representation using a sorted singly linked list, where nodes are ordered by descending exponent with no zero-coefficient terms.
+
+- `Term` nested class as linked list node storing `exponent`, `coefficient`, and `next` pointer
+- `addTerm(expon, coeff)` inserts a term maintaining sorted order, merges duplicates, removes zero terms
+- `operator+` and `operator*` via term-by-term traversal using `addTerm`
+- `operator<<` with special formatting for coefficients ±1 and exponents 0, 1
+
+**Concepts:** Linked Lists · Nested Classes · Operator Overloading · Dynamic Memory · Rule of Three
+
+---
+
 ### ♟️ ChessBoardArray
 
 A sparse matrix implementation using a chessboard pattern, where only "white squares" store non-zero values.
